@@ -1,4 +1,4 @@
-#xlabs pubapps test
+# xlabs pubapps test
 
 Sample application is a very simple API, chose to stick with dotnet 6 as LTS, chose not to use minimual APIs to emulate perfered approach for production APIs rather than POCs.
 
@@ -10,19 +10,19 @@ If read/write API might want to consider CQRS.
 
 APIs would probably want updating to provide more presice error status such depdning on result of service level calls.
 
-##Backend
+## Backend
 Repo contains dotnet 6 API
     *Swagger on startup to exercise the API endpoints.
     *Sql Lite DB for data store, to keep it simple for more complex queries, otherwise could have utilsed Azure Table storage if a relatively static data set.
     *Small unit test project.
     *Dockerfile - basic out of the box docker file
 
-##Frontend
+## Frontend
 Probably looked to create a React SPA application for the frontend.
     *Would have needed to add Cors to API for this
     *Possibly some E2E tests with something like playwright
 
-##Infrastructure
+## Infrastructure
 Included a single PR build/test yaml file, but idealy a more complete yaml for PR build but then on merge delpoy to QA with a approval gate to Production.
 Depending on system size and setup this could be achieved in single yaml or composite of several yamls for different stages of the pipeline, and a small trigger yaml in the repo itself.
 
