@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xlabs-pubapp", "xlabs-pubapp\xlabs-pubapp.csproj", "{0E066DB9-D9DA-40AB-B906-5A0B931884B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xlabs-pubapp-tests", "xlabs-pubapp-tests\xlabs-pubapp-tests.csproj", "{C65ACCBD-2F0B-4D13-B232-E29B626E5E96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E066DB9-D9DA-40AB-B906-5A0B931884B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E066DB9-D9DA-40AB-B906-5A0B931884B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E066DB9-D9DA-40AB-B906-5A0B931884B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E066DB9-D9DA-40AB-B906-5A0B931884B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65ACCBD-2F0B-4D13-B232-E29B626E5E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65ACCBD-2F0B-4D13-B232-E29B626E5E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65ACCBD-2F0B-4D13-B232-E29B626E5E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65ACCBD-2F0B-4D13-B232-E29B626E5E96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBC48734-2BE2-4900-8226-741AA78496DC}
+	EndGlobalSection
+EndGlobal

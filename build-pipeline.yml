@@ -1,0 +1,32 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: UseDotNet@2
+  inputs:
+    version: '6.x'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Dotnet Restore'
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: 'thefeed'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Dotnet Build Release'
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    argumnets: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*tests/*.csproj'
+    argumnets: '--configuration Release'
