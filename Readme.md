@@ -30,3 +30,6 @@ Would add a release docker file for QA/Prod
 
 Look to move logging to Application Insights
 Look to utilse Azure App Config for any settings
+
+## How to Run
+As the repo is API only currently steps are clone the repo, the project is targeting docker so can be run directly there from Visual Studio and Swagger UI can be used to test the API.
